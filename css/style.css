@@ -100,7 +100,7 @@ h6 {
   color: #ffffff;
   display: inline-block;
   transition: all 0.3s ease 0s;
-  background-image: -moz-linear-gradient(0deg, #7a77ff 0%, #8cfe86 100%);
+  background-image: -webkit-linear-gradient(0deg, #7a77ff 0%, #8cfe86 100%);
 }
 .primary-btn i {
   top: 50%;
