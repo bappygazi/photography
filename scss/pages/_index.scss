@@ -1,0 +1,209 @@
+// header part scss//
+
+#header {
+    .navbar {
+        height: 72px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+
+        &.navbg {
+            background-color: #222;
+            transition: all 0.3s ease 0s;
+            border-bottom: 1px solid #323232;
+        }
+
+
+        .navbar-nav {
+            margin-right: 70px;
+            transform-origin: 100% 50%;
+            transition: all 0.3s ease 0s;
+
+            @media (max-width: 767.98px) {
+                top: 35px;
+                right: -15px;
+                padding: 20px 10px;
+                margin-right: 0px;
+                text-align: right;
+                position: absolute;
+                background-color: #ffffff;
+
+                .nav-link {
+                    text-align: right;
+                    color: #7a77ff !important;
+                }
+            }
+
+            @media (min-width: 768px) and (max-width: 991.98px) {
+                margin-right: 0px;
+            }
+
+            &.nav-visible {
+                visibility: visible;
+            }
+
+            &.nav-invisible {
+                transform: scale(0);
+                visibility: hidden;
+            }
+
+            .nav-item {
+                .nav-link {
+                    font-size: 12px;
+                    color: #ffffff;
+
+                    &:hover {
+                        color: #7a77ff;
+                    }
+                }
+            }
+        }
+
+        .menu-toggle {
+
+            i {
+                font-size: 24px;
+                color: #ffffff;
+            }
+
+            &.close-icon {
+                i {
+                    font-size: 26px;
+                }
+            }
+        }
+    }
+}
+
+// hero part scss//
+#hero {
+    .carousel-item {
+        height: 100vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        .carousel-caption {
+            bottom: 85px;
+        }
+
+    }
+}
+
+// about part scss //
+
+.about {
+    &-text {
+        padding-left: 8%;
+        padding-right: 18%;
+        @media (max-width: 991.98px) {
+            padding: 0;
+            h1 {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+// gallery part scss //
+.gallery {
+    background-color: #222222;
+
+    &-img {
+        column-count: 4;
+        @media (max-width: 767.98px) {
+            column-count: 1;
+        }
+
+
+    }
+}
+
+// callToAction part scss//
+.callToAction {
+    background-image: -webkit-linear-gradient(0deg, #7a77ff 0%, #8cfe86 100%);
+}
+
+// blog part scss//
+.blog {
+    &-item {
+        img {
+            transition: all 0.3s ease 0s;
+
+            &:hover {
+                opacity: .5;
+                cursor: pointer;
+                transform: scale(1.05);
+            }
+        }
+    }
+
+}
+
+// contact part scss//
+.contact {
+    &-text {
+        padding-left: 10%;
+        @media (max-width: 991.98px) {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+
+    }
+
+    .input-form {
+        height: 45px;
+
+        &::placeholder {
+            font-size: 14px;
+        }
+    }
+
+    .form-control {
+        &:focus {
+            outline: none;
+            border-color: #d3d3d3;
+            box-shadow: none !important;
+        }
+
+        &::placeholder {
+            color: #acacac;
+            font-size: 14px;
+        }
+    }
+}
+
+// footer part scss//
+.footer {
+    background-color: #222222;
+
+    &-text {
+        p {
+            i {
+                color: #7a77ff;
+            }
+
+            a {
+                color: #7a77ff;
+            }
+        }
+    }
+
+    .social {
+        &-icon {
+            a {
+                padding: 10px 15px;
+                background: #111111;
+                transition: all 0.3s ease 0s;
+
+                i {
+                    color: #cccccc;
+                    transition: all 0.3s ease 0s;
+                }
+
+                &:hover {
+                    background-image: -webkit-linear-gradient(0deg, #7a77ff 0%, #8cfe86 100%);
+                }
+            }
+        }
+    }
+}
